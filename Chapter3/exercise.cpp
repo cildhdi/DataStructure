@@ -9,10 +9,9 @@ void SeqList<T>::Unique()
 }
 
 //2(3)
-/*由于LinkList与SeqList均含有GetLength、GetElem与InsertElem三个成员函数，
-所以把Combine做成模板函数
-本题直接使用Combine<SeqList<T>>
-上机题中合并链表可直接使用Combine<LinkList<T>>*/
+/*
+顺序表合并: Combine<SeqList<T>>
+链表合并: Combine<LinkList<T>>*/
 template <typename T>
 T Combine(const T &s1, const T &s2)
 {
