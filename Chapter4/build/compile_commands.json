@@ -1,7 +1,0 @@
-[
-{
-  "directory": "d:/Users/Miles/Desktop/Chapter4/build",
-  "command": "D:\\TDM-GCC-64\\bin\\g++.exe   -I../.  -g   -o CMakeFiles\\7.dir\\7.cpp.obj -c D:\\Users\\Miles\\Desktop\\Chapter4\\7.cpp",
-  "file": "D:/Users/Miles/Desktop/Chapter4/7.cpp"
-}
-]
