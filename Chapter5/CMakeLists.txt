@@ -5,4 +5,4 @@ project(chapter5)
 set(CMAKE_CXX_STANDARD 11)
 
 include_directories(.)
-add_executable(sj sj.cpp)
+add_executable(kmp kmp.cpp)

@@ -11,9 +11,18 @@ void get_failure(const String &p, int *f)
     int j = 0, k = -1;
     while (j < p.GetLength() - 1)
         if (k == -1 || p[k] == p[j])
-            f[++j] = ++k;
+        {
+            j++;
+            k++;
+            if (p[k] == p[j])
+                f[j] = f[k];
+            else
+                f[j] = k;
+        }
         else
             k = f[k];
+    for (int i = 0; i < p.GetLength(); i++)
+        std::cout << f[i] << ' ';
 }
 
 int kmp_find(const String &s, const String &p, unsigned int begin = 0)
@@ -100,9 +109,9 @@ int kmp_find_step(const String &s, const String &p, unsigned int begin = 0)
 int main()
 {
     {
-        String p = "abcabaa";
+        String p = "abcaabbabcabaacbacba";
         String t = "abcaabbabcabaacbacba";
-        std::cout << kmp_find_step(t, p);
+        kmp_find(t, p);
     }
     system("pause");
     return 0;
